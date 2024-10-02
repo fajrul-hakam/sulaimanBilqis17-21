@@ -1,0 +1,47 @@
+:root {
+    --color1: #efcf96;
+    --color2: #162e48;
+    --color3: #254367;
+    --color4: #5a5a5a;
+    --color5: #d3d3d3;
+}
+body {
+    width: 100%;
+    margin: 0;
+}
+
+/* navbar */
+nav {
+    width: 100%;
+    margin: 0;
+    background-color: var(--color3);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+li {
+    margin: 10px 10px;
+    list-style-type: none;
+}
+
+/* section hero */
+.hero {
+    background-image: url('/asset/contoh.jpeg');
+}
+
+/* Custom shadow for only bottom and right side */
+.hover\:shadow-custom:hover {
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+/* Scale effect for hover */
+.hover\:scale-105:hover {
+    transform: scale(1.05) !important; 
+}
+
+.hover\:bg-blue3:hover {
+    background-color: var(--color3);
+}
