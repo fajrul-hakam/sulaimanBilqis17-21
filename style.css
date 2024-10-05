@@ -12,7 +12,7 @@ body {
 
 /* navbar */
 nav {
-    width: 100%;
+    width: 100% !important;
     margin: 0;
     background-color: var(--color3);
 }
@@ -28,9 +28,20 @@ li {
     list-style-type: none;
 }
 
+.hover\:logo {
+    text-shadow: 2px 2px 4px #ffffff;
+}
+
 /* section hero */
 .hero {
-    background-image: url('/asset/contoh.jpeg');
+    background-color: var(--color4);
+    width: 100%;
+}
+
+img#logo {
+    width: 130px;
+    height: auto;
+    margin-top: -9rem;
 }
 
 /* Custom shadow for only bottom and right side */

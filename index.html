@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angkatan 17</title>
+    <title>Krastala Drestha</title>
     <link rel="stylesheet" href="style.css">
     <!-- Tailwind CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
@@ -15,32 +15,25 @@
 <body>
     <!-- Nav -->
     <nav class="p-4 fixed top-0 w-full shadow-lg z-50 bg-gray-800">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="container mx-auto flex justify-center items-center">
             <!-- Logo -->
-            <div class="flex items-center space-x-2">
-                <img src="/asset/logo-no-bg.png" alt="Logo" class="h-10 w-10">
-                <span class="text-white text-xl font-bold">SulaimanBilqis17</span>
-            </div>
-            <!-- Nav Links -->
-            <div class="space-x-4">
-                <a href="#" class="text-white hover:text-gray-300 transition duration-200">Home</a>
-                <a href="#" class="text-white hover:text-gray-300 transition duration-200">About</a>
-                <a href="#" class="text-white hover:text-gray-300 transition duration-200">Services</a>
-                <a href="#" class="text-white hover:text-gray-300 transition duration-200">Contact</a>
+            <div class="flex items-center space-x-2 justify-center">
+                <img src="/asset/sulaimanBilqis.png" alt="Logo" class="h-10 w-10 hover:logo" data-aos="zoom-in">
+                <a class="text-white text-xl font-bold">Sulaiman&amp;Bilqis17</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-cover bg-center h-screen hero">
+    <section class="bg-cover bg-center h-screen hero w-full">
         <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
-            <div class="text-center text-white px-4">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">Angkatan 17
-                </h1>
-                <p class="text-lg md:text-2xl mb-6" data-aos="fade-down">Sulaiman Bilqis</p>
-                <a href="#services"
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg"
-                    data-aos="fade-down" data-aos-delay="100">Get Started</a>
+            <div class="text-center text-white relative flex items-center justify-center">
+                <img src="/asset/logo-no-bg.png" id="logo" alt="logo" class="absolute inset-0 mx-auto opacity-80" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="relative text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down" data-aos-delay="400">Angkatan 17</h1>
+                    <p class="text-lg md:text-2xl mb-6" data-aos="fade-down" data-aos-delay="400">Sulaiman Bilqis</p>
+                </div>
+                <!-- <a href="#services" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg" data-aos="fade-down" data-aos-delay="100">Get Started</a> -->
             </div>
         </div>
     </section>
@@ -270,8 +263,8 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Tambahkan sebanyak mungkin kartu, baris akan otomatis bertambah -->
         <div class="relative group">
-            <div
-                class="w-64 h-64 border border-gray-300 overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
+            <p></p>
+            <div class="w-64 h-64 border border-gray-300 overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
                 <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="w-full h-full object-cover">
             </div>
         </div>
@@ -329,7 +322,7 @@
     </div>
 
     <!-- Contact Us -->
-    <div class="w-full bg-gray-800">
+    <div class="w-full bg-gray-800" id="contact">
         <div class="container mx-auto py-12 px-0">
             <div class="w-full p-8">
                 <h2 class="text-4xl font-bold text-center mb-8 text-white">Contact Us</h2>
