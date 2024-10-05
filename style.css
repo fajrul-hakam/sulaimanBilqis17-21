@@ -17,6 +17,18 @@
     font-style: normal;
     /* Sesuaikan jika perlu */
 }
+/* loading */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.animation-delay-400 {
+    animation-delay: 0.4s;
+}
 
 body {
     width: 100%;
