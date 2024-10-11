@@ -9,42 +9,55 @@
 /* font style */
 @font-face {
     font-family: 'alhambra';
-    /* Nama yang Anda tentukan */
     src: url('/asset/ALHAMBRA.TTF') format('truetype');
-    /* Ganti dengan path yang sesuai */
     font-weight: normal;
-    /* Sesuaikan jika perlu */
     font-style: normal;
-    /* Sesuaikan jika perlu */
 }
-/* loading */
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+@font-face {
+    font-family: 'brittany';
+    src: url('/asset/BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-.animation-delay-400 {
-    animation-delay: 0.4s;
+@font-face {
+    font-family: 'libre';
+    src: url('/asset/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.alhambra {
+    font-family: 'alhambra';
+}
+.brittany {
+    font-family: 'brittany';
+}
+.libre {
+    font-family: 'libre';
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    width: 100%;
+    width: 100% !important;
+    max-width: 100vw;
+    height: 100% !important;
+    overflow-x: hidden;
     margin: 0;
+    padding: 0;
 }
 
 /* navbar */
 nav {
-    width: 100% !important;
+    max-width: 100%;
     margin: 0;
-    background-color: var(--color3);
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.alhambra {
-    font-family: 'alhambra';
-}
 
 ul {
     display: flex;
@@ -57,20 +70,52 @@ li {
     list-style-type: none;
 }
 
-.hover\:logo {
+.hover\:logo:hover {
     text-shadow: 2px 2px 4px #ffffff;
+    animation-duration: 1s;
 }
 
 /* section hero */
 .hero {
-    background-color: var(--color4);
     width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    background: linear-gradient(270deg, var(--color4), var(--color2), var(--color3), var(--color5));
+    background-size: 600% 600%;
+    animation: wave 10s ease infinite;
+}
+
+@keyframes wave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 img#logo {
-    width: 130px;
+    max-width: 100%;
+    width: 60vw;
     height: auto;
-    margin-top: -9rem;
+    margin-top: -6rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* wave */
+.path-0 {
+    animation: pathAnim-0 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.path-0 {
+    animation: pathAnim-0 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 /* Custom shadow for only bottom and right side */
@@ -84,4 +129,39 @@ img#logo {
 
 .hover\:bg-blue3:hover {
     background-color: var(--color3);
+}
+
+/* scale effect nav-logo */
+.nav-logo {
+    transition: 1s;
+}
+.nav-logo:hover {
+    transform: rotate(360deg);
+}
+
+/* Untuk layar tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    img#logo {
+        width: 700px;
+    }
+
+}
+
+/* Untuk layar handphone */
+@media only screen and (max-width: 767px) {
+    nav {
+        max-width: 100;
+    }
+    img#logo {
+        width: 700px;
+        height: auto;
+    }
+    .hero {
+        width: 100;
+        height: auto;
+    }
+    .hero-text p {
+        margin-top: -4rem;
+        margin-left: -2rem;
+    }
 }
