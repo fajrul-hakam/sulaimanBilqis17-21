@@ -73,8 +73,6 @@ li {
 }
 
 img#logo {
-    max-width: 100%;
-    width: 60vw;
     height: auto;
     margin-top: -6rem;
 }
@@ -107,7 +105,6 @@ h1 {
 /* Untuk layar tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     img#logo {
-        width: 700px;
     }
 
 }
@@ -118,11 +115,10 @@ h1 {
         max-width: 100;
     }
     img#logo {
-        width: 700px;
         height: auto;
     }
     .hero {
-        width: 100;
+        width: 125% !important;
         height: auto;
     }
     .hero-text p {
